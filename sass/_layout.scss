@@ -25,7 +25,7 @@
             padding: 14rem;
             
             @include responsive(tab-land){
-                padding: 8rem;
+                padding: 5rem;
             }
         }
     }
@@ -55,6 +55,10 @@
             right: 0;
             font-size: 4rem;
         }
+        
+        @include responsive(tab-port){
+            top: -4rem;
+        }
     }
         
     &__container{
@@ -74,9 +78,13 @@
         .carousel{
             position: relative;
             margin: 0 auto;
-            top: 4rem;
-            width: 80%;
+            top: 0rem;
+            width: 50%;
             height: 100%;
+            
+            @include responsive(tab-port){
+                width: 100%;
+            }
             
             &-item{
                 padding: 15rem;
@@ -84,7 +92,7 @@
                 border-radius: 3px;
                 
                 &:nth-child(1){
-                background: url('../img/vleventos.JPG');
+                background: url('../img/vleventos.jpg');
                 background-size: cover;
                 }
                 
@@ -118,7 +126,7 @@
             }
             
             &:nth-child(2){
-                background: url('../img/vleventos.JPG');
+                background: url('../img/vleventos.jpg');
                 background-size: cover;
             }
             
