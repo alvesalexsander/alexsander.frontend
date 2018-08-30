@@ -109,7 +109,7 @@ body {
         border: .3rem solid black;
         border-radius: 3px; }
         .projects__container .carousel-item:nth-child(1) {
-          background: url("../img/vleventos.jpg");
+          background: url("../img/vleventos.JPG");
           background-size: cover; }
         .projects__container .carousel-item:nth-child(2) {
           background: url("../img/natours.JPG");
@@ -130,7 +130,7 @@ body {
           z-index: 20;
           border-radius: 3px; }
       .projects__container .col-md-3:nth-child(2) {
-        background: url("../img/vleventos.jpg");
+        background: url("../img/vleventos.JPG");
         background-size: cover; }
       .projects__container .col-md-3:nth-child(3) {
         background: url("../img/natours.JPG");
