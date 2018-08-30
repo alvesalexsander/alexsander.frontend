@@ -1,0 +1,274 @@
+//Hero
+.hero{
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    z-index: 10;
+    
+    .row{
+        height: 100%;
+    }
+    .col-md-6{
+        position: relative;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        
+        &:first-of-type{
+            background: url(../img/cara.JPG);
+            background-size: cover;
+            background-position: 99% 0;
+        }
+        
+        &:last-of-type{
+            background-color: $color-gray-dark;
+            padding: 14rem;
+            
+            @include responsive(tab-land){
+                padding: 8rem;
+            }
+        }
+    }
+}
+
+//Projects
+.projects{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color-primary-dark, 1);
+    position: relative;
+    
+    &__text{
+        transform: rotate(320deg);
+        position: relative;
+        top: 16rem;
+        right: 2rem;
+        z-index: 20;
+        color: $color-black;
+        font-size: 8rem;
+        font-weight: 400;
+        text-shadow: 3rem 2.5rem 7px rgba($color-black, .3);
+        
+        @include responsive(tab-land){
+            transform: rotate(0);
+            top: 0;
+            right: 0;
+            font-size: 4rem;
+        }
+    }
+        
+    &__container{
+        height: 60vh;
+        width: 100%;
+        position: relative;
+        top: 20vh;
+        
+        @include responsive(tab-land){
+            padding: 2rem;
+        }
+        
+        &__row{
+            height: 100%;
+        }
+        
+        .carousel{
+            position: relative;
+            margin: 0 auto;
+            top: 4rem;
+            width: 80%;
+            height: 100%;
+            
+            &-item{
+                padding: 15rem;
+                border: .3rem solid black;
+                border-radius: 3px;
+                
+                &:nth-child(1){
+                background: url('../img/vleventos.jpg');
+                background-size: cover;
+                }
+                
+                &:nth-child(2){
+                background: url('../img/natours.JPG');
+                background-size: cover;
+                }
+                
+                &:nth-child(3){
+                background: url('../img/abstyping.jpg');
+                background-size: cover;
+                }
+            }
+        }
+        
+        .col-md-3{
+            filter: grayscale(100%);
+            transition: .5s ease;
+            
+            &:not(:first-child){
+                margin-left: 0rem;
+                border: .3rem solid black;
+                
+                &:hover{
+                    filter: grayscale(0%);
+                    transform: scale(1.05);
+                    position: relative;
+                    z-index: 20;
+                    border-radius: 3px;
+                }
+            }
+            
+            &:nth-child(2){
+                background: url('../img/vleventos.jpg');
+                background-size: cover;
+            }
+            
+            &:nth-child(3){
+                background: url('../img/natours.JPG');
+                background-size: cover;
+            }
+            
+            &:nth-child(4){
+                background: url('../img/abstyping.jpg');
+                background-size: cover;
+            }
+            
+        }
+    }
+
+}
+
+//Skills
+.skills{
+    width: 100vw;
+    
+    &__container{
+        padding: 15rem 2rem;
+        
+        @include responsive(tab-port){
+            padding: 0;
+        }
+    }
+    
+    &__row{
+        height: 100%;
+    }
+    
+    &__card{
+        background-image: linear-gradient(to bottom right, rgba($color-white, .85), rgba($color-gray-light, .9));
+        height: 100%;
+        width: 28%;
+        border-radius: 4px;
+        padding: 4rem 2rem;
+        transition: .3s ease;
+        
+        @include responsive(tab-port){
+            width: 100%;
+            flex: 1;
+            transform: scale(.8);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__icon{
+            padding-bottom: 3rem;
+            
+            @include responsive(tab-port){
+                width: 50%;
+                margin: auto;
+            }
+        }
+        
+        &__text{
+            font-size: 1.8rem;
+            line-height: 2rem;
+            padding: 1rem;
+            text-align: justify;
+            
+            @include responsive(tab-port){
+                font-size: 1.6rem;
+                padding: 0;
+            }
+            
+        }
+        
+        &:hover{
+            background-image: linear-gradient(to bottom right, rgba($color-white, .95), rgba($color-gray-light, .95));
+            transform: scale(1.05);
+            box-shadow: 0 0 100px rgba($color-primary, .3);
+            
+            @include responsive(tab-port){
+                transform: scale(.85);
+            }
+        }
+    }
+}
+
+.contact{
+    background-color: rgba($color-primary-dark, 1);
+    padding: 10rem 20rem;
+    flex-direction: row-reverse;
+    
+    @include responsive(tab-land){
+        padding: 2rem 4rem;
+    }
+    
+    &__form{
+        flex: 0 0 45%;
+        
+        &__label{
+            font-size: 2rem;
+        }
+        
+        &__item{
+            padding: 1rem;
+            border: 0;
+            background-color: rgba($color-white, .9);
+            color: $color-black;
+            border-radius: 5px;
+            overflow: hidden;
+            resize: none;
+            
+            @include responsive(tab-port){
+                width: 100%;
+            }
+            
+        }
+        
+        #message{
+            min-height: 20rem;
+        }
+        
+        &__button{
+            width: 50%;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            background-color: rgba($color-white, .9);
+            border: 0;
+            border-radius: 5px;
+            margin: 0 auto;
+            
+            @include responsive(tab-port){
+                width: 100%;
+                padding: 2rem 3rem;
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .cta{
+        flex: 0 0 45%;
+        font-size: 7rem;
+        color: $color-black;
+        text-shadow: 3rem 2.5rem 7px rgba($color-black, .3);
+        padding: 2rem 0;
+        
+        @include responsive(tab-land){
+            font-size: 3rem;
+            padding: 4rem;
+        }
+        
+        @include responsive(phone){
+            font-size: 2.4rem;
+        }
+    }
+}

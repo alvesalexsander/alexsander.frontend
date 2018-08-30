@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  backface-visibility: hidden;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden; }
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  line-height: 1.6; }
+
+.nameTitle {
+  color: #d74124;
+  font-size: 5rem;
+  font-family: "Homemade Apple", sans-serif;
+  position: relative;
+  text-shadow: 3rem 2.5rem 7px rgba(215, 65, 36, 0.3);
+  text-align: right; }
+
+.who {
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: -5px;
+  position: relative;
+  text-align: right;
+  z-index: 20; }
+
+.extras {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  text-align: right;
+  position: relative; }
+
+.hero {
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  z-index: 10; }
+  .hero .row {
+    height: 100%; }
+  .hero .col-md-6 {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0; }
+    .hero .col-md-6:first-of-type {
+      background: url(../img/cara.JPG);
+      background-size: cover;
+      background-position: 99% 0; }
+    .hero .col-md-6:last-of-type {
+      background-color: #23140a;
+      padding: 14rem; }
+      @media (max-width: 75em) {
+        .hero .col-md-6:last-of-type {
+          padding: 8rem; } }
+
+.projects {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d74124;
+  position: relative; }
+  .projects__text {
+    transform: rotate(320deg);
+    position: relative;
+    top: 16rem;
+    right: 2rem;
+    z-index: 20;
+    color: #000;
+    font-size: 8rem;
+    font-weight: 400;
+    text-shadow: 3rem 2.5rem 7px rgba(0, 0, 0, 0.3); }
+    @media (max-width: 75em) {
+      .projects__text {
+        transform: rotate(0);
+        top: 0;
+        right: 0;
+        font-size: 4rem; } }
+  .projects__container {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    top: 20vh; }
+    @media (max-width: 75em) {
+      .projects__container {
+        padding: 2rem; } }
+    .projects__container__row {
+      height: 100%; }
+    .projects__container .carousel {
+      position: relative;
+      margin: 0 auto;
+      top: 4rem;
+      width: 80%;
+      height: 100%; }
+      .projects__container .carousel-item {
+        padding: 15rem;
+        border: .3rem solid black;
+        border-radius: 3px; }
+        .projects__container .carousel-item:nth-child(1) {
+          background: url("../img/vleventos.jpg");
+          background-size: cover; }
+        .projects__container .carousel-item:nth-child(2) {
+          background: url("../img/natours.JPG");
+          background-size: cover; }
+        .projects__container .carousel-item:nth-child(3) {
+          background: url("../img/abstyping.jpg");
+          background-size: cover; }
+    .projects__container .col-md-3 {
+      filter: grayscale(100%);
+      transition: .5s ease; }
+      .projects__container .col-md-3:not(:first-child) {
+        margin-left: 0rem;
+        border: .3rem solid black; }
+        .projects__container .col-md-3:not(:first-child):hover {
+          filter: grayscale(0%);
+          transform: scale(1.05);
+          position: relative;
+          z-index: 20;
+          border-radius: 3px; }
+      .projects__container .col-md-3:nth-child(2) {
+        background: url("../img/vleventos.jpg");
+        background-size: cover; }
+      .projects__container .col-md-3:nth-child(3) {
+        background: url("../img/natours.JPG");
+        background-size: cover; }
+      .projects__container .col-md-3:nth-child(4) {
+        background: url("../img/abstyping.jpg");
+        background-size: cover; }
+
+.skills {
+  width: 100vw; }
+  .skills__container {
+    padding: 15rem 2rem; }
+    @media (max-width: 56.25em) {
+      .skills__container {
+        padding: 0; } }
+  .skills__row {
+    height: 100%; }
+  .skills__card {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.85), rgba(153, 153, 153, 0.9));
+    height: 100%;
+    width: 28%;
+    border-radius: 4px;
+    padding: 4rem 2rem;
+    transition: .3s ease; }
+    @media (max-width: 56.25em) {
+      .skills__card {
+        width: 100%;
+        flex: 1;
+        transform: scale(0.8);
+        display: flex;
+        flex-direction: column; } }
+    .skills__card__icon {
+      padding-bottom: 3rem; }
+      @media (max-width: 56.25em) {
+        .skills__card__icon {
+          width: 50%;
+          margin: auto; } }
+    .skills__card__text {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      padding: 1rem;
+      text-align: justify; }
+      @media (max-width: 56.25em) {
+        .skills__card__text {
+          font-size: 1.6rem;
+          padding: 0; } }
+    .skills__card:hover {
+      background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(153, 153, 153, 0.95));
+      transform: scale(1.05);
+      box-shadow: 0 0 100px rgba(255, 135, 75, 0.3); }
+      @media (max-width: 56.25em) {
+        .skills__card:hover {
+          transform: scale(0.85); } }
+
+.contact {
+  background-color: #d74124;
+  padding: 10rem 20rem;
+  flex-direction: row-reverse; }
+  @media (max-width: 75em) {
+    .contact {
+      padding: 2rem 4rem; } }
+  .contact__form {
+    flex: 0 0 45%; }
+    .contact__form__label {
+      font-size: 2rem; }
+    .contact__form__item {
+      padding: 1rem;
+      border: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+      border-radius: 5px;
+      overflow: hidden;
+      resize: none; }
+      @media (max-width: 56.25em) {
+        .contact__form__item {
+          width: 100%; } }
+    .contact__form #message {
+      min-height: 20rem; }
+    .contact__form__button {
+      width: 50%;
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 0;
+      border-radius: 5px;
+      margin: 0 auto; }
+      @media (max-width: 56.25em) {
+        .contact__form__button {
+          width: 100%;
+          padding: 2rem 3rem;
+          font-size: 2rem; } }
+  .contact .cta {
+    flex: 0 0 45%;
+    font-size: 7rem;
+    color: #000;
+    text-shadow: 3rem 2.5rem 7px rgba(0, 0, 0, 0.3);
+    padding: 2rem 0; }
+    @media (max-width: 75em) {
+      .contact .cta {
+        font-size: 3rem;
+        padding: 4rem; } }
+    @media (max-width: 37.5em) {
+      .contact .cta {
+        font-size: 2.4rem; } }
+
+.fadeIn {
+  animation: fadeIn 12s ease;
+  opacity: 1; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
