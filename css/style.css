@@ -73,24 +73,21 @@ body {
   background-color: #d74124;
   position: relative; }
   .projects__text {
-    transform: rotate(320deg);
-    position: relative;
-    top: 8rem;
-    right: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 20;
     color: #000;
-    font-size: 8rem;
+    font-size: 5.6rem;
     font-weight: 400;
     text-shadow: 3rem 2.5rem 7px rgba(0, 0, 0, 0.3); }
     @media (max-width: 75em) {
       .projects__text {
-        transform: rotate(0);
-        top: 0;
-        right: 0;
-        font-size: 4rem; } }
-    @media (max-width: 56.25em) {
+        font-size: 4.5rem; } }
+    @media (max-width: 61.99em) {
       .projects__text {
-        top: -4rem; } }
+        font-size: 4rem; } }
   .projects__container {
     height: 60vh;
     width: 100%;
@@ -100,16 +97,20 @@ body {
       .projects__container {
         padding: 2rem; } }
     .projects__container__row {
-      height: 100%; }
+      height: 100%;
+      position: relative; }
     .projects__container .carousel {
       position: relative;
       margin: 0 auto;
       top: 0rem;
       width: 50%;
       height: 100%; }
-      @media (max-width: 56.25em) {
+      @media (max-width: 61.99em) {
         .projects__container .carousel {
           width: 100%; } }
+      @media (max-width: 767.98px) {
+        .projects__container .carousel {
+          top: 10rem; } }
       .projects__container .carousel-item {
         padding: 15rem;
         border: .3rem solid black;
@@ -149,7 +150,7 @@ body {
   width: 100vw; }
   .skills__container {
     padding: 15rem 2rem; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 61.99em) {
       .skills__container {
         padding: 0; } }
   .skills__row {
@@ -157,29 +158,43 @@ body {
   .skills__card {
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.85), rgba(153, 153, 153, 0.9));
     height: 100%;
-    width: 28%;
+    width: 25%;
     border-radius: 4px;
     padding: 4rem 2rem;
     transition: .3s ease; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 61.99em) {
       .skills__card {
         width: 100%;
         flex: 1;
         transform: scale(0.8);
         display: flex;
         flex-direction: column; } }
+    @media (max-width: 61.99em) {
+      .skills__card:first-child {
+        padding: 5rem 2rem; } }
+    @media (max-width: 75em) {
+      .skills__card {
+        width: 30%; } }
+    @media (max-width: 767.98px) {
+      .skills__card {
+        width: 100%; } }
     .skills__card__icon {
       padding-bottom: 3rem; }
-      @media (max-width: 56.25em) {
+      @media (max-width: 61.99em) {
         .skills__card__icon {
           width: 50%;
           margin: auto; } }
+    .skills__card__heading {
+      font-size: 2rem;
+      text-align: center;
+      color: #000;
+      font-weight: 600; }
     .skills__card__text {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 2rem;
-      padding: 1rem;
-      text-align: justify; }
-      @media (max-width: 56.25em) {
+      text-align: center;
+      font-weight: 100; }
+      @media (max-width: 61.99em) {
         .skills__card__text {
           font-size: 1.6rem;
           padding: 0; } }
@@ -187,7 +202,7 @@ body {
       background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(153, 153, 153, 0.95));
       transform: scale(1.05);
       box-shadow: 0 0 100px rgba(255, 135, 75, 0.3); }
-      @media (max-width: 56.25em) {
+      @media (max-width: 61.99em) {
         .skills__card:hover {
           transform: scale(0.85); } }
 
@@ -210,7 +225,7 @@ body {
       border-radius: 5px;
       overflow: hidden;
       resize: none; }
-      @media (max-width: 56.25em) {
+      @media (max-width: 61.99em) {
         .contact__form__item {
           width: 100%; } }
     .contact__form #message {
@@ -223,7 +238,7 @@ body {
       border: 0;
       border-radius: 5px;
       margin: 0 auto; }
-      @media (max-width: 56.25em) {
+      @media (max-width: 61.99em) {
         .contact__form__button {
           width: 100%;
           padding: 2rem 3rem;
@@ -238,7 +253,7 @@ body {
       .contact .cta {
         font-size: 3rem;
         padding: 4rem; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 35.99em) {
       .contact .cta {
         font-size: 2.4rem; } }
 

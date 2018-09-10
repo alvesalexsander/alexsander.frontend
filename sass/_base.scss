@@ -12,10 +12,10 @@ $color-gray-light: #999999;
 
 @mixin responsive($device-breakpoint){
     @if $device-breakpoint == phone{ 
-        @media (max-width: 37.5em) { @content };
+        @media (max-width: 35.99em) { @content };
     }
     @if $device-breakpoint == tab-port{ 
-        @media (max-width: 56.25em) { @content };
+        @media (max-width: 61.99em) { @content };
     }
     @if $device-breakpoint == tab-land{ 
         @media (max-width: 75em) { @content };
@@ -23,6 +23,15 @@ $color-gray-light: #999999;
     @if $device-breakpoint == bigscreen{  
         @media (min-width: 112.5em) { @content };
     }
+}
+
+//MIXINS
+
+@mixin center-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 *,

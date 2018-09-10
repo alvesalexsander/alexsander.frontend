@@ -39,26 +39,21 @@
     position: relative;
     
     &__text{
-        transform: rotate(320deg);
-        position: relative;
-        top: 8rem;
-        right: 4rem;
+        @include center-content;
         z-index: 20;
         color: $color-black;
-        font-size: 8rem;
+        font-size: 5.6rem;
         font-weight: 400;
         text-shadow: 3rem 2.5rem 7px rgba($color-black, .3);
         
         @include responsive(tab-land){
-            transform: rotate(0);
-            top: 0;
-            right: 0;
-            font-size: 4rem;
+            font-size: 4.5rem;
         }
         
         @include responsive(tab-port){
-            top: -4rem;
+            font-size: 4rem;
         }
+        
     }
         
     &__container{
@@ -73,6 +68,7 @@
         
         &__row{
             height: 100%;
+            position: relative;
         }
         
         .carousel{
@@ -84,6 +80,11 @@
             
             @include responsive(tab-port){
                 width: 100%;
+            }
+            
+                    
+            @media (max-width: 767.98px){
+                top: 10rem;
             }
             
             &-item{
@@ -164,7 +165,7 @@
     &__card{
         background-image: linear-gradient(to bottom right, rgba($color-white, .85), rgba($color-gray-light, .9));
         height: 100%;
-        width: 28%;
+        width: 25%;
         border-radius: 4px;
         padding: 4rem 2rem;
         transition: .3s ease;
@@ -175,7 +176,23 @@
             transform: scale(.8);
             display: flex;
             flex-direction: column;
+            
         }
+        
+        &:first-child{
+            @include responsive(tab-port){
+            padding: 5rem 2rem;
+            
+            }
+        }
+        
+        @include responsive(tab-land){
+            width: 30%;
+        }
+        
+        @media (max-width: 767.98px){
+            width: 100%;
+            }
         
         &__icon{
             padding-bottom: 3rem;
@@ -186,11 +203,18 @@
             }
         }
         
+        &__heading{
+            font-size: 2rem;
+            text-align: center;
+            color: $color-black;
+            font-weight: 600;
+        }
+        
         &__text{
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             line-height: 2rem;
-            padding: 1rem;
-            text-align: justify;
+            text-align: center;
+            font-weight: 100;
             
             @include responsive(tab-port){
                 font-size: 1.6rem;
