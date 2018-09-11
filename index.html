@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-        
         <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Work+Sans:800|Lato" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        
-        <!--bootstrap--><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <title>Alexsander Alves &ndash; Front-end Developer</title>
     </head>
     <body>
@@ -27,15 +26,22 @@
        </div>
        
        <div id="projects" class="projects">
+         <div class="bg-video">
+             <video class="bg-video__content" autoplay muted loop>
+                 <source src="img/Background_Bokeh_05.webm" type="video/webm">
+                 Your browser does not support the video tag.
+             </video>
+         </div>
+          <div id="arrow" class="projects__arrow"></div>
            <div class="projects__container">
                <div class="projects__container__row row">
                    <div class="col-md-3">
                        <h1 class="projects__text nameTitle">some jobs and projects</h1>
                    </div>
                    <!--PROJECTS CARDS PARA DESKTOP-->
-                   <a href="http://sashaclimax.github.io/vleventos" class="d-none d-md-block col-md-3"></a>
-                   <a href="http://sashaclimax.github.io/natours" class="d-none d-md-block col-md-3"></a>
-                   <a href="#" class="d-none d-md-block col-md-3"></a>
+                   <a href="http://sashaclimax.github.io/vleventos" rel="noopener noreferrer" target="_blank" class="d-none d-md-block col-md-3"></a>
+                   <a href="http://sashaclimax.github.io/natours" rel="noopener noreferrer" target="_blank" class="d-none d-md-block col-md-3"></a>
+                   <a href="https://sashaclimax.github.io/boltnetwork/" rel="noopener noreferrer" target="_blank" class="d-none d-md-block col-md-3"></a>
                    
                    <!--MOBILE CAROUSEL SLIDER PARA RESPONSIVIDADE-->
                     <div id="carouselExampleIndicators" class="d-md-none carousel slide" data-ride="carousel">
@@ -115,10 +121,37 @@
            
        </div>
        
+       <footer class="footer">
+        
+          <div class="footer__social">
+            <a href="https://github.com/sashaclimax">
+                <svg viewBox="0 0 100 100" class="footer__social__icon">
+                    <use xlink:href="img\k-SVG-sprite.svg#github"/>
+                </svg>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5522997055388&text=Ola,%20Alexsander!%20Tenho interesse nos seus serviços!">
+               <svg viewBox="0 0 100 100" class="footer__social__icon">
+                <use xlink:href="img\k-SVG-sprite.svg#whatsapp"/>
+            </svg>
+            </a>
+          </div>
+          <div class="footer__email">
+              <p>contato@alexsanderalves.com</p>
+          </div>
+           
+       </footer>
+       
        <!--bootstrap-->
+        <div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
        <script src="js/main.js"></script>
+       <script src="js/arrow.js"></script>
+       </div>
     </body>
 </html>

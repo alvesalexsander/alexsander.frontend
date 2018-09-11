@@ -50,11 +50,12 @@ html{
     box-sizing: border-box;
     font-size: 62.5%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body{
     background-image: url('../img/bg.jpg');
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     
     line-height: 1.6;

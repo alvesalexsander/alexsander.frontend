@@ -38,10 +38,40 @@
     background-color: rgba($color-primary-dark, 1);
     position: relative;
     
+    .bg-video{
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        opacity: .5;
+        
+        &__content{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    &__arrow{
+        @include center-content;
+        top: 0%;
+        opacity: 0;
+        width: 8rem;
+        height: 8rem;
+        background-color: $color-black;
+        -webkit-clip-path: polygon(100% 70%, 50% 100%, 0 70%, 0 15%, 50% 40%, 100% 15%);
+        clip-path: polygon(100% 70%, 50% 100%, 0 70%, 0 15%, 50% 40%, 100% 15%);
+        animation: fadeIn 4s ease;
+        animation-fill-mode: forwards;
+    }
+    
     &__text{
         @include center-content;
         z-index: 20;
-        color: $color-black;
+        color: $color-gray-dark;
         font-size: 5.6rem;
         font-weight: 400;
         text-shadow: 3rem 2.5rem 7px rgba($color-black, .3);
@@ -53,7 +83,6 @@
         @include responsive(tab-port){
             font-size: 4rem;
         }
-        
     }
         
     &__container{
@@ -81,31 +110,9 @@
             @include responsive(tab-port){
                 width: 100%;
             }
-            
                     
             @media (max-width: 767.98px){
                 top: 10rem;
-            }
-            
-            &-item{
-                padding: 15rem;
-                border: .3rem solid black;
-                border-radius: 3px;
-                
-                &:nth-child(1){
-                background: url('../img/vleventos.JPG');
-                background-size: cover;
-                }
-                
-                &:nth-child(2){
-                background: url('../img/natours.JPG');
-                background-size: cover;
-                }
-                
-                &:nth-child(3){
-                background: url('../img/abstyping.jpg');
-                background-size: cover;
-                }
             }
         }
         
@@ -137,13 +144,11 @@
             }
             
             &:nth-child(4){
-                background: url('../img/abstyping.jpg');
+                background: url('../img/boltnetwork.jpg');
                 background-size: cover;
             }
-            
         }
     }
-
 }
 
 //Skills
@@ -220,7 +225,6 @@
                 font-size: 1.6rem;
                 padding: 0;
             }
-            
         }
         
         &:hover{
@@ -237,7 +241,7 @@
 
 .contact{
     background-color: rgba($color-primary-dark, 1);
-    padding: 10rem 20rem;
+    padding: 6rem 20rem;
     flex-direction: row-reverse;
     
     @include responsive(tab-land){
@@ -263,7 +267,6 @@
             @include responsive(tab-port){
                 width: 100%;
             }
-            
         }
         
         #message{
@@ -302,5 +305,31 @@
         @include responsive(phone){
             font-size: 2.4rem;
         }
+    }
+}
+
+.footer{
+    background-color: $color-gray-dark;
+    position: absolute;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    &__social{
+        display: flex;
+        width: 9rem;
+        justify-content: space-between;
+        
+        &__icon{
+            width: 4rem;
+            fill: $color-white; 
+        }
+    }
+    
+    &__email{
+        color: white;
     }
 }
