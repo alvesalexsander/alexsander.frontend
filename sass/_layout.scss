@@ -61,7 +61,7 @@
         opacity: 0;
         width: 8rem;
         height: 8rem;
-        background-color: $color-black;
+        background-color: $color-gray-dark;
         -webkit-clip-path: polygon(100% 70%, 50% 100%, 0 70%, 0 15%, 50% 40%, 100% 15%);
         clip-path: polygon(100% 70%, 50% 100%, 0 70%, 0 15%, 50% 40%, 100% 15%);
         animation: fadeIn 4s ease;
@@ -113,6 +113,27 @@
                     
             @media (max-width: 767.98px){
                 top: 10rem;
+            }
+            
+            &-item{
+                padding: 15rem;
+                border: .3rem solid black;
+                border-radius: 3px;
+                
+                &:nth-child(1){
+                background: url('../img/vleventos.JPG');
+                background-size: cover;
+                }
+                
+                &:nth-child(2){
+                background: url('../img/natours.JPG');
+                background-size: cover;
+                }
+                
+                &:nth-child(3){
+                background: url('../img/boltnetwork.jpg');
+                background-size: cover;
+                }
             }
         }
         

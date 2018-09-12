@@ -94,7 +94,7 @@ body {
     opacity: 0;
     width: 8rem;
     height: 8rem;
-    background-color: #000;
+    background-color: #23140a;
     -webkit-clip-path: polygon(100% 70%, 50% 100%, 0 70%, 0 15%, 50% 40%, 100% 15%);
     clip-path: polygon(100% 70%, 50% 100%, 0 70%, 0 15%, 50% 40%, 100% 15%);
     animation: fadeIn 4s ease;
@@ -138,6 +138,19 @@ body {
       @media (max-width: 767.98px) {
         .projects__container .carousel {
           top: 10rem; } }
+      .projects__container .carousel-item {
+        padding: 15rem;
+        border: .3rem solid black;
+        border-radius: 3px; }
+        .projects__container .carousel-item:nth-child(1) {
+          background: url("../img/vleventos.JPG");
+          background-size: cover; }
+        .projects__container .carousel-item:nth-child(2) {
+          background: url("../img/natours.JPG");
+          background-size: cover; }
+        .projects__container .carousel-item:nth-child(3) {
+          background: url("../img/boltnetwork.jpg");
+          background-size: cover; }
     .projects__container .col-md-3 {
       filter: grayscale(100%);
       transition: .5s ease; }
