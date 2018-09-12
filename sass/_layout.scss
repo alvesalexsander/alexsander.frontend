@@ -121,7 +121,7 @@
                 border-radius: 3px;
                 
                 &:nth-child(1){
-                background: url('../img/vleventos.JPG');
+                background: url('../img/bestbite.jpg');
                 background-size: cover;
                 }
                 
@@ -155,7 +155,7 @@
             }
             
             &:nth-child(2){
-                background: url('../img/vleventos.JPG');
+                background: url('../img/bestbite.jpg');
                 background-size: cover;
             }
             
@@ -260,6 +260,7 @@
     }
 }
 
+//Contact
 .contact{
     background-color: rgba($color-primary-dark, 1);
     padding: 6rem 20rem;
@@ -329,6 +330,7 @@
     }
 }
 
+//Footer
 .footer{
     background-color: $color-gray-dark;
     position: absolute;
@@ -351,6 +353,20 @@
     }
     
     &__email{
-        color: white;
+        color: $color-white;
+    }
+    
+    &__credit{
+        color: $color-white;
+        
+        & p{
+            & a,
+                a:active,
+                a:visited,
+                a:link{
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
     }
 }
