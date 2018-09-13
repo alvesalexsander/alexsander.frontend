@@ -290,7 +290,6 @@ body {
   padding: 1rem 0;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column; }
   .footer__social {
@@ -303,7 +302,8 @@ body {
   .footer__email {
     color: #fff; }
   .footer__credit {
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
     .footer__credit p a,
     .footer__credit p a:active,
     .footer__credit p a:visited,

@@ -337,7 +337,6 @@
     padding: 1rem 0;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     
@@ -358,6 +357,7 @@
     
     &__credit{
         color: $color-white;
+        text-align: center;
         
         & p{
             & a,

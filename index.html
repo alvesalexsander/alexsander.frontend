@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <meta name="theme-color" content="#d74124">
         <link rel="preload" href="img/cara.JPG" as="image">
         <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Work+Sans:800|Lato" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
@@ -11,16 +12,18 @@
         <title>Alexsander Alves &ndash; Front-end Developer</title>
     </head>
     <body>
-        <div id="hero" class="hero">
-            <div id="heroRow" class="row" onmousemove="textMove(event)">
-               <div class="d-none d-md-block col-md-6"></div>
-               <div class="col-md-6">
-                   <h1 id="text-0" class="nameTitle fadeIn">Alexsander Alves.</h1>
-                   <h2 id="text-1" class="who fadeIn">Front-end Developer</h2>
-                   <div id="text-2" class="extras fadeIn">Web Designer<br>Fotógrafo amador<br>STEM Enthusiastic<br>e gamer nas horas vagas</div>
-               </div>
+        <main id="hero">
+            <div class="hero">
+                <div id="heroRow" class="row" onmousemove="textMove(event)">
+                   <div class="d-none d-md-block col-md-6"></div>
+                   <div class="col-md-6">
+                       <h1 id="text-0" class="nameTitle fadeIn">Alexsander Alves.</h1>
+                       <h2 id="text-1" class="who fadeIn">Front-end Developer</h2>
+                       <div id="text-2" class="extras fadeIn">Web Designer<br>Fotógrafo amador<br>STEM Enthusiastic<br>e gamer nas horas vagas</div>
+                   </div>
+                </div>
             </div>
-       </div>
+        </main>
         <div id="projects" class="projects">
             <div class="bg-video">
              <video class="bg-video__content" autoplay muted loop>
@@ -38,7 +41,7 @@
                 <a href="https://sashaclimax.github.io/bestbite/" rel="noopener noreferrer" target="_blank" class="d-none d-md-block col-md-3"></a>
                 <a href="http://sashaclimax.github.io/natours" rel="noopener noreferrer" target="_blank" class="d-none d-md-block col-md-3"></a>
                 <a href="https://sashaclimax.github.io/boltnetwork/" rel="noopener noreferrer" target="_blank" class="d-none d-md-block col-md-3"></a>
-                   <!--MOBILE CAROUSEL SLIDER PARA RESPONSIVIDADE-->
+                   <!--MOBILE CAROUSEL SLIDER-->
                  <div id="carouselExampleIndicators" class="d-md-none carousel slide" data-ride="carousel">
                      <ol class="carousel-indicators">
                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -124,7 +127,7 @@
               <p>contato@alexsanderalves.com</p>
           </div>
           <div class="footer__credit">
-              <p>Designed by Alexsander Alves. SVG icons from <a href="https://www.flaticon.com">FlatIcon</a></p>
+              <p>Designed by Alexsander Alves</p><p>SVG icons from <a href="https://www.flaticon.com">FlatIcon</a></p>
           </div>
        </footer>
        
@@ -132,10 +135,12 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     <!--jquery-->
       <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+      <!--behaviors-->
        <script src="js/main.js"></script>
        <script src="js/arrow.js"></script>
     </body>
